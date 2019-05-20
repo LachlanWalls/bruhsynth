@@ -1,0 +1,35 @@
+body {
+    user-select: none;
+}
+
+.synth-container {
+    width: 600px;
+    height: 200px;
+}
+
+.synth-white {
+    width: calc(100% / 7 - 2px);
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+}
+
+.synth-white:active {
+    background-color: lightgray;
+}
+
+.synth-black {
+    width: calc(100% / 10);
+    height: 140px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 4px;
+    position: absolute;
+}
+
+.synth-black:active,
+.synth-black[is-active] {
+    background-color: black;
+}
